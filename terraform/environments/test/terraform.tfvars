@@ -1,13 +1,13 @@
 # Azure subscription vars
-subscription_id = ""
-client_id = ""
-client_secret = ""
-tenant_id = ""
+subscription_id = "c4863261-b051-4fa5-8f4c-a3a5132d5ed1"
+client_id = "b9c1a376-8ac6-4e43-b499-3b4bd28f34b8"
+client_secret = "kPm8Q~xnpZyDJ9GADzPmSrVi.~to3K-HNGZzzcR~"
+tenant_id = "f958e84a-92b8-439f-a62d-4f45996b6d07"
 
 # Resource Group/Location
-location = ""
-resource_group_name = ""
-application_type = ""
+location = "East US"
+resource_group_name =  "Azuredevops"
+application_type = "myApplication"
 
 # Network
 virtual_network_name = ""
