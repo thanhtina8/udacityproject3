@@ -11,11 +11,6 @@ resource "azurerm_network_interface" "test" {
   }
 }
 
-# Created image from packer
-data "azurerm_image" "test" {
-  name                = "vm-ubuntu-1804"
-  resource_group_name = "${var.resource_group}"
-}
 
 resource "azurerm_linux_virtual_machine" "test" {
   name                  = "${var.application_type}-${var.resource_type}"
@@ -24,8 +19,7 @@ resource "azurerm_linux_virtual_machine" "test" {
   size                  = "Standard_B2s"
   admin_username        = "${var.admin_username}"
   admin_password        = "${var.admin_password}"
-  disable_password_authentication = false
-  source_image_id       = "${data.azurerm_image.test.id}"
+  disable_password_authentication = false 
   network_interface_ids = [azurerm_network_interface.test.id]
  
   os_disk {
@@ -37,5 +31,11 @@ resource "azurerm_linux_virtual_machine" "test" {
     username   = "${var.admin_username}"
     #public_key = file("~/.ssh/id_rsa.pub")
     public_key = file("/home/vsts/work/_temp/id_rsa.pub")
+  }
+  source_image_reference {
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "18.04-LTS"
+    version   = "latest"
   }
 }
