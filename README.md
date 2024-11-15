@@ -1,5 +1,7 @@
 ## Introduction
-This is the project for the Udacity Cloud DevOps using Microsoft Azure Nanodegree Program, in this project we create disposable test environments and run a variety of automated tests with the click of a button. Additionally, we monitor and provide insight into an application's behavior, and determine root causes by querying the application’s custom log files.
+Ensuring Quality Releases - Project Overview
+
+In this project, you'll develop and demonstrate your skills in using a variety of industry leading tools, especially Microsoft Azure, to create disposable test environments and run a variety of automated tests with the click of a button. Additionally, you'll monitor and provide insight into your application's behavior, and determine root causes by querying the application’s custom log files.
 
 For this project we use the following tools:
 
@@ -9,6 +11,8 @@ For this project we use the following tools:
 - Selenium: For creating a UI test suite for a website.
 - JMeter: For creating a Stress Test Suite and an Endurance Test Suite.
 - Azure Monitor: For configuring alerts to trigger given a condition from an App Service.
+
+  
 
 ## Getting Started
 For this project we will follow the next steps:
