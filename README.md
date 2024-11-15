@@ -39,7 +39,7 @@ For this project we will follow the next steps:
    ```
     terraform/environments/test/configure-tfstate-storage-account.sh
    ```
-5. Copy the storage_account_name, container_name, and access_key, and update the corresponding values in terraform/environments/test/main.tf accordingly.
+4. Copy the storage_account_name, container_name, and access_key, and update the corresponding values in terraform/environments/test/main.tf accordingly.
    ```
    terraform {
         backend "azurerm" {
@@ -50,7 +50,19 @@ For this project we will follow the next steps:
         }
     }
    ```
-
+5. Update values in terraform/environments/test/terraform.tfvars
+      ```
+      # Azure subscription vars
+      subscription_id = "xxxxxxxxxxxx"
+      client_id = "xxxxxxxxxxxx"
+      client_secret = "xxxxxxxxxxxx"
+      tenant_id = "xxxxxxxxxxxx"
+      ```
+6. Generate an SSH key and perform a keyscan of your GitHub to obtain the known hosts.
+    ```
+    ssh-keygen -t rsa
+    cat ~/.ssh/id_rsa.pub
+    ```
 ## Azure DevOps Pipeline
 1. Go to https://dev.azure.com/ using Udacity provide account to create new AzureDevops project or use your email to create.
 2. Install below extensions :
