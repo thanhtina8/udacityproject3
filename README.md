@@ -62,19 +62,27 @@ For this project we will follow the next steps:
 |Terraform|https://marketplace.visualstudio.com/items?itemName=ms-devlabs.custom-terraform-tasks&targetId=625be685-7d04-4b91-8e92-0a3f91f6c3ac&utm_source=vstsproduct&utm_medium=ExtHubManageList|
 
 3. Go to Project Settings > Pipelines > Service Connection > Azure Resource Manager > Service principal(manual), Create the new Service Connection
+   
+   ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/ServiceConnection.png)
 4. Go to portal to create a VM to use as an Agent or request a default agent from Microsoft
+    ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/HostedAgent.png)
 5. Create a New Pipeline > select GitHub > Existing Azure Pipelines YAML file > Choose  **azure-pipelines.yaml**  file
 
 6. When running pipeline to stage "UITest" you might facing error : "No resource found ..." because you not yet setup VM for running this step in Environment.
 
 7. Go to Azure Pipeline > Environments > test > Add resource > Virtual machines
-
+   ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Azure_Test_Enviroment_Create.png)
 8. Copy command, SSH to the VM then run copied command
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Azure_Test_Enviroment_VM.png)
+
 9. After finished #8 go back to pipeline and re-run
-
 10. Now wait for pipeline to execute on the following Stages: Provision > Deployment > PerfTest > UITest > FunctionalTest
-11. After the pipeline run complete successfully then check the Test result and deployed Azure app service is up
-
+    ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Azure_Pipeline_Overall.png)
+14. After the pipeline run complete successfully then check the Test result and deployed Azure app service is up
+    ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Azure_TestPlan_Report_1.png)
+    ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Azure_TestPlan_Report_2.png)
+    ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Azure_TestPlan_Report_3.png)
+    ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Fake_RestAPI.png)
 ## Configure Logging and Monitoring
 1. Create a Log Analytics workspace
 
@@ -93,7 +101,7 @@ For this project we will follow the next steps:
 6. Add “Send Email” for the Action Name, and choose **Email/SMS/Push/Voice** for the action type, and enter your email. Click **OK**.
 7. Name the alert rule `Http 404`, and leave the severity at `3`, then click **Create**.
 
-
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_Alert404_Rule.png)
 ### App Service Diagnostic Log Analytics Configuration
 
 1. Go to the App service, then **Diagnostic Settings** > **Add Diagnostic Setting**.
@@ -106,6 +114,7 @@ For this project we will follow the next steps:
 
 1. Go to **Log Analytics Workspace** > Go to Virtual Machines(deprecated) and Connect the created VM to the Workspace ( Connect). Just wait that shows `Connected`.
 
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_LogAnalytic_ConnectedVM.png)
 
 ### Set up custom logging:
 
@@ -113,6 +122,7 @@ For this project we will follow the next steps:
    - Select the file `selenium.log` > **Next** > **Next**.
    - Enter the following paths as type Linux: `/var/log/selenium/selenium.log`.
    - Name it (`project3_selenium_logs_CL`) and click **Done**.
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_LogAnalytic_CustomLog.png.png)
 
 2. Go to the App Service web page, navigate the links, and generate 404 not found errors (e.g., by visiting non-existent pages).
 
@@ -120,7 +130,9 @@ For this project we will follow the next steps:
 
 ### Monitoring & Observability
 
-
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_Alert_Email.png)
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/MMonitoring_LogAnalytic_404.png)
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_LogAnalytic_Selenium.png)
 
 
 
