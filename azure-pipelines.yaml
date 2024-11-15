@@ -1,4 +1,4 @@
-name: Azure Pipelines
+name: $(Date:yyyyMMdd)$(Rev:.r)
 
 trigger:
 - main
