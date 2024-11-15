@@ -143,7 +143,7 @@ For this project we will follow the next steps:
 ### Monitoring & Observability
 
  ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_Alert_Email.png)
- ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/MMonitoring_LogAnalytic_404.png)
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_LogAnalytic_404.png)
  ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_LogAnalytic_Selenium.png)
 
 
