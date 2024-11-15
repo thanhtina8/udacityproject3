@@ -1,6 +1,6 @@
 {
-	"id": "22276c26-0d6b-433f-929d-c7553738b19a",
-	"name": "Project3 Environment",
+	"id": "45f20446-51da-4967-af52-d3aaf205ab77",
+	"name": "Udacity Project3 Environment",
 	"values": [
 		{
 			"key": "url",
@@ -29,6 +29,6 @@
 		}
 	],
 	"_postman_variable_scope": "environment",
-	"_postman_exported_at": "2024-10-17T15:22:12.001Z",
-	"_postman_exported_using": "Postman/11.17.1"
+	"_postman_exported_at": "2024-11-15T05:13:02.418Z",
+	"_postman_exported_using": "Postman/11.19.0"
 }
