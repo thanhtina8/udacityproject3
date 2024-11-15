@@ -134,7 +134,7 @@ For this project we will follow the next steps:
    - Select the file `selenium.log` > **Next** > **Next**.
    - Enter the following paths as type Linux: `/var/log/selenium/selenium.log`.
    - Name it (`project3_selenium_logs_CL`) and click **Done**.
- ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_LogAnalytic_CustomLog.png.png)
+ ![Agent](https://github.com/thanhtina8/udacityproject3/blob/main/Screenshoots/Monitoring_LogAnalytic_CustomLog.png)
 
 2. Go to the App Service web page, navigate the links, and generate 404 not found errors (e.g., by visiting non-existent pages).
 
