@@ -7,7 +7,7 @@ tenant_id = "f958e84a-92b8-439f-a62d-4f45996b6d07"
 # Resource Group/Location
 location = "eastus2"
 resource_group = "Azuredevops"
-application_type = "udacityproject3"
+application_type = "project3"
 
 # Network
 virtual_network_name = "project3-network"
@@ -16,5 +16,5 @@ address_prefixes = ["10.5.1.0/24"]
 address_prefix_test = "10.5.1.0/24"
 
 # VM
-admin_username = "vm_adminuser"
+admin_username = "vm_admin"
 admin_password = "Origami@123"
